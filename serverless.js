@@ -61,7 +61,7 @@ class TencentBottle extends Component {
     const tencentCloudFunctionOutputs = await tencentCloudFunction(inputs)
     const apigwParam = {
       serviceName: inputs.serviceName,
-      description: 'Serverless Framework Tencent-Pyramid Component',
+      description: 'Serverless Framework Tencent-Bottle Component',
       serviceId: inputs.serviceId,
       region: inputs.region,
       protocols: inputs.apigatewayConf.protocols || ['http'],
