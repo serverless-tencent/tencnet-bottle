@@ -14,7 +14,7 @@
 
 ### 0. 准备 `
 
-安装Pyramid，新建python文件，例如`app.py`：
+安装Bottle，新建python文件，例如`app.py`：
 
 ```pyyhon
 from bottle import route, run, template
