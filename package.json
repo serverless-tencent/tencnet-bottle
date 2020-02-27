@@ -72,10 +72,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gosls/tencent-bottle.git"
+    "url": "git+https://github.com/serverless-components/tencent-bottle.git"
   },
   "bugs": {
-    "url": "https://github.com/gosls/tencent-bottle/issues"
+    "url": "https://github.com/serverless-components/tencent-bottle/issues"
   },
-  "homepage": "https://github.com/gosls/tencent-bottle#readme"
+  "homepage": "https://github.com/serverless-components/tencent-bottle#readme"
 }

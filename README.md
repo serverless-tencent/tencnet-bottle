@@ -55,7 +55,7 @@ $ touch serverless.yml
 
 ```yml
 BottleTest:
-  component: '@gosls/tencent-bottle'
+  component: '@serverless/tencent-bottle'
   inputs:
     region: ap-guangzhou
     functionName: BottleFunctionTest

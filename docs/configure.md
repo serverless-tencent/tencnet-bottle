@@ -7,7 +7,7 @@
 
 bottle:
   region: ap-guangzhou
-  component: '@gosls/tencent-bottle'
+  component: '@serverless/tencent-bottle'
   inputs:
     region: ap-guangzhou
     functionName: bottle-function
