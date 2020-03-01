@@ -1,3 +1,7 @@
+[![Serverless Bottle Tencent Cloud](https://img.serverlesscloud.cn/202031/1583057588539-bottle_%E9%95%BF.png)](http://serverless.com)
+
+&nbsp;
+
 # 腾讯云 Bottle Serverless Component
 
 ## 简介
