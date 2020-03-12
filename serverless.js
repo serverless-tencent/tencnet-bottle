@@ -26,6 +26,7 @@ class TencentBottle extends Component {
       `BottleComponent_${random({ length: 6 })}`
     inputs.codeUri = ensureString(inputs.code, { isOptional: true }) || process.cwd()
     inputs.region = ensureString(inputs.region, { default: 'ap-guangzhou' })
+    inputs.namespace = ensureString(inputs.namespace, { default: 'default' })
     inputs.include = ensureIterable(inputs.include, { default: [], ensureItem: ensureString })
     inputs.exclude = ensureIterable(inputs.exclude, { default: [], ensureItem: ensureString })
     inputs.apigatewayConf = ensurePlainObject(inputs.apigatewayConf, { default: {} })
@@ -75,10 +76,12 @@ class TencentBottle extends Component {
           method: 'ANY',
           function: {
             isIntegratedResponse: true,
-            functionName: tencentCloudFunctionOutputs.Name
+            functionName: tencentCloudFunctionOutputs.Name,
+            functionNamespace: inputs.namespace
           }
         }
-      ]
+      ],
+      customDomain: inputs.apigatewayConf.customDomain
     }
 
     if (inputs.apigatewayConf && inputs.apigatewayConf.auth) {
