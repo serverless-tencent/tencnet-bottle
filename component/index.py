@@ -9,6 +9,7 @@ from werkzeug.urls import url_encode, url_unquote
 from werkzeug.http import HTTP_STATUS_CODES
 from werkzeug._compat import BytesIO, string_types, to_bytes, wsgi_encoding_dance
 import bottle
+import app
 
 TEXT_MIME_TYPES = [
     "application/json",
